@@ -14,14 +14,21 @@
 ; Answer
 (define emptyq?
   (lambda (q)
-    (null? (cddr q))))
+    (null? (cdar q))))
 
-; getq and delq!; TODO: use emptyq?
+(define assert-non-empty
+  (lambda (q)
+    (when (emptyq? q)
+      (assertion-violation #f "queue must be nonempty"))))
+
+; Revised getq and delq
 (define getq
   (lambda (q)
+    (assert-non-empty q)
     (car (car q))))
 
 (define delq!
   (lambda (q)
+    (assert-non-empty q)
     (set-car! q (cdr (car q)))))
 
