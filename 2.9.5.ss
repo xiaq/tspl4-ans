@@ -31,4 +31,3 @@
   (lambda (q)
     (assert-non-empty q)
     (set-car! q (cdr (car q)))))
-

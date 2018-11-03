@@ -3,4 +3,4 @@ Programming Language, 4th Edition](https://www.scheme.com/tspl4/). Some of
 those may not be as good as the ones in the official
 [answers](https://www.scheme.com/tspl4/answers.html) chapter.
 
-Status: WIP, currently missing Section 3.3 and 3.4.
+Status: currently missing 3.3.5.
